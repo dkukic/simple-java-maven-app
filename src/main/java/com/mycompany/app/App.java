@@ -3,19 +3,26 @@ package com.mycompany.app;
 /**
  * Hello world!
  */
-public class App
-{
+public class App {
 
-    private final String message = "Hello World!";
+	private final String message = "Hello World!";
 
-    public App() {}
+	public App() {
+	}
 
-    public static void main(String[] args) {
-        System.out.println(new App().getMessage());
-    }
+	public static void main(String[] args) {
+		App app = new App();
+		app.setMessage("Brave new world");
 
-    private final String getMessage() {
-        return message;
-    }
+		System.out.println(app.getMessage());
+	}
+
+	private final String getMessage() {
+		return message;
+	}
+
+	private void setMessage(String message) {
+		this.message = message;
+	}
 
 }
