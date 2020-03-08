@@ -12,7 +12,7 @@ public class App {
 
 	public static void main(String[] args) {
 		App app = new App();
-		app.setMessage("Brave new world");
+		//app.setMessage("Brave new world");
 
 		System.out.println(app.getMessage());
 	}
